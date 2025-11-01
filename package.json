@@ -7,9 +7,9 @@
   "author": "小沐沐吖 <sunnyboy_mu@163.com>",
   "license": "MIT",
   "scripts": {
-    "build": "vuepress build --clean-cache --clean-temp",
+    "build": "vuepress build src --clean-cache --clean-temp",
     "dev": "vuepress dev src",
-    "dev-clean": "vuepress dev  --clean-cache --clean-temp",
+    "dev-clean": "vuepress dev src --clean-cache --clean-temp",
     "preview": "http-server .vuepress/dist",
     "vp-update": "pnpm dlx vp-update"
   },

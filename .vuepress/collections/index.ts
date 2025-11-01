@@ -25,12 +25,21 @@
  * 通过 `defineCollection` 定义的 collection 配置，应该填入 `defineCollections` 中
  */
 import { defineCollections } from "vuepress-theme-plume";
-import blog from "./blog";
-import doc from "./doc";
+import webBasic from "./web-basic";
+import engineering from "./engineering";
+import components from "./components";
+import serve from "./serve";
+import tools from "./tools";
 
 /**
  * 导出所有的 collections
  * (blog 为博客示例，如果不需要博客功能，请删除)
  * (demoDoc 为参考示例，如果不需要它，请删除)
  */
-export default defineCollections([blog, doc]);
+export default defineCollections([
+  webBasic,
+  engineering,
+  components,
+  serve,
+  tools,
+]);
