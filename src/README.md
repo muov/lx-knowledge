@@ -4,7 +4,7 @@ config:
   - type: doc-hero
     hero:
       name: 沐沐物语
-      tagline: 一个小白立志成为全栈开发工程师的的成长物语！
+      tagline: 🔥Love & ✊Study 全栈开发工程师的攻守之道！
       image: /logo-transparent.png
       actions:
         - theme: brand

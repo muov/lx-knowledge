@@ -1,3 +1,44 @@
 @import url(./theme.css);
 @import url(./variables.css);
 @import url(./home.css);
+@import url(./Londrina-Sketch.css);
+@import url(./Ma-Shan-Zheng.css);
+@import url(./Pacifico.css);
+
+.vp-navbar-title {
+  font-family: "Londrina Sketch", "Ma Shan Zheng", "Pacifico", sans-serif;
+}
+
+.vp-content .heading,
+.vp-content .tagline {
+  font-family: "Londrina Sketch", "Ma Shan Zheng", "Pacifico", sans-serif;
+}
+
+.vp-footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0 24px;
+}
+
+@media (min-width: 768px) {
+  .vp-footer .container .message {
+    display: block;
+    position: relative;
+  }
+
+  .vp-footer .container .message:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: -12px;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 16px;
+    background-color: var(--vp-c-gray-1);
+    opacity: 0.5;
+    transition: background-color var(--vp-t-color);
+  }
+}
