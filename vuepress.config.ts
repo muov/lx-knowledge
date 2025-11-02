@@ -24,6 +24,9 @@ export default defineUserConfig({
 
   alias: {
     "~theme": resolve("./.vuepress/theme"),
+    "@theme/Nav/VPNavBarTitle.vue": resolve(
+      "./.vuepress/theme/components/VPNavBarTitle.vue"
+    ),
   },
 
   bundler: viteBundler(),
