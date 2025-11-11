@@ -27,8 +27,7 @@ export default defineNavbarConfig([
     items: [
       {
         text: "🔖 书签",
-        link: "/more/bookmark/development/",
-        activeMatch: "/more/bookmark/",
+        link: "/more/bookmark/",
       },
     ],
   },
