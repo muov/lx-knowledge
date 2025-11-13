@@ -25,11 +25,11 @@
  * 通过 `defineCollection` 定义的 collection 配置，应该填入 `defineCollections` 中
  */
 import { defineCollections } from "vuepress-theme-plume";
-import webBasic from "./web-basic";
-import engineering from "./engineering";
-import components from "./components";
-import serve from "./serve";
-import tools from "./tools";
+import coreFundamentals from "./core-fundamentals";
+import frameworksEcosystem from "./frameworks-ecosystem";
+import advancedFutureTech from "./advanced-future-tech";
+import engineeringTooling from "./engineering-tooling";
+import crossPlatform from "./cross-platform";
 
 /**
  * 导出所有的 collections
@@ -37,9 +37,9 @@ import tools from "./tools";
  * (demoDoc 为参考示例，如果不需要它，请删除)
  */
 export default defineCollections([
-  webBasic,
-  engineering,
-  components,
-  serve,
-  tools,
+  coreFundamentals,
+  frameworksEcosystem,
+  advancedFutureTech,
+  crossPlatform,
+  engineeringTooling,
 ]);
