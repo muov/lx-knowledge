@@ -11,31 +11,38 @@ export default defineNavbarConfig([
   {
     text: "Web 前端",
     icon: "icon-yingyong",
+    activeMatch: "/web/",
+    prefix: "/web/",
     items: [
       {
         text: "核心基础",
         icon: "icon-xingqiu",
-        link: "/core-fundamentals/adzhqh55/",
+        activeMatch: "/core/",
+        link: "core/90j9jwqp/",
       },
       {
         text: "框架生态",
         icon: "icon-mti-shengtaihuanjing",
-        link: "/frameworks-ecosystem/2e95sxbz/",
+        activeMatch: "/frameworks/",
+        link: "frameworks/2e95sxbz/",
       },
       {
         text: "工程化",
         icon: "icon-jiqunguanliicon",
-        link: "/engineering-tooling/",
+        activeMatch: "/engineering/",
+        link: "engineering/0i0fxti7/",
       },
       {
         text: "多端开发",
         icon: "icon-kuaduanjiaohu",
-        link: "/cross-platform/xwnvrxjz/",
+        activeMatch: "/platform/",
+        link: "platform/xwnvrxjz/",
       },
       {
         text: "前沿领域",
         icon: "icon-chuangyeqianyan",
-        link: "/advanced-future-tech/a7lo9rj8/",
+        activeMatch: "/advanced/",
+        link: "advanced/rfwdqhak/",
       },
     ],
   },
@@ -47,12 +54,19 @@ export default defineNavbarConfig([
     activeMatch: "/more/",
     items: [
       {
-        text: "🔖 书签",
+        text: "书签",
+        icon: "icon-shuqian-",
         link: "/more/bookmark/",
       },
       {
-        text: "前端面试集锦 ",
+        text: "前端面试 ",
+        icon: "icon-xiangfa",
         link: "/more/interview/",
+      },
+      {
+        text: "我的书籍 ",
+        icon: "icon-shuji",
+        link: "/more/ebook/",
       },
     ],
   },

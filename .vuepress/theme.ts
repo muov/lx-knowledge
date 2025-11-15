@@ -68,7 +68,7 @@ export default plumeTheme({
         // lx-knowledge
         "//at.alicdn.com/t/c/font_5065952_9noef9y3lmq.css",
         // lx-knowledge-color
-        "//at.alicdn.com/t/c/font_5065954_kbop7wtup8p.css",
+        "//at.alicdn.com/t/c/font_5065954_1hq7yqz7mi0j.css",
       ],
     },
   },
