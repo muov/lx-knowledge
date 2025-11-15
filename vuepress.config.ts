@@ -1,7 +1,8 @@
 import { viteBundler } from "@vuepress/bundler-vite";
 import { defineUserConfig } from "vuepress";
-import { getDirname, path } from "vuepress/utils";
+import { fs, getDirname, path } from "vuepress/utils";
 import theme from "./.vuepress/theme";
+import { globSync } from "tinyglobby";
 
 const __dirname = getDirname(import.meta.url);
 const resolve = (...dir: string[]) => path.resolve(__dirname, ...dir);
@@ -32,4 +33,19 @@ export default defineUserConfig({
   bundler: viteBundler(),
   shouldPrefetch: false, // 站点较大，页面数量较多时，不建议启用
   theme,
+  onGenerated: async (app) => {
+    const names = ["Ma-Shan-Zheng", "Londrina-Sketch"];
+    const dest = app.dir.dest("assets");
+    const indexPath = app.dir.dest("index.html");
+    const assets = globSync("*.ttf", { cwd: dest }) || [];
+    const fonts = assets.filter((asset) =>
+      names.some((name) => asset.includes(name))
+    );
+    let links = "";
+    fonts.forEach((font) => {
+      links += `<link rel="preload" href="/assets/${font}" as="font" type="font/ttf" crossorigin="anonymous">`;
+    });
+    const content = fs.readFileSync(indexPath, "utf-8");
+    fs.writeFileSync(indexPath, content.replace("<head>", `<head>${links}`));
+  },
 });
