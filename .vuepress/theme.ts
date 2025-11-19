@@ -71,6 +71,7 @@ export default plumeTheme({
         "//at.alicdn.com/t/c/font_5065954_1hq7yqz7mi0j.css",
       ],
     },
+    demo: true,
   },
 
   /**
