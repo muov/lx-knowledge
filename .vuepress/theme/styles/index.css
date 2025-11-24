@@ -42,3 +42,7 @@
     transition: background-color var(--vp-t-color);
   }
 }
+
+.page-ebook .image-container img {
+  object-fit: fill;
+}

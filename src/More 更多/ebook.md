@@ -2,11 +2,20 @@
 title: 我的书籍
 createTime: 2024/02/22 17:40:23
 permalink: /more/ebook/
+pageClass: page-ebook
 ---
 
-## ✨ 2025（6 本）
+## ✨ 2025（7 本）
 
 <CardGrid :cols="{ sm: 2, md: 3, lg: 4 }">
+  <ImageCard
+    image="https://upyun-oss.mu00.cn/2025/11/24/1763990620998.jpg"
+    title="你坏"
+    description="如果你和众人不一样。那就不一样。如果你和世界不一样。那就不一样吧。"
+    href="https://book.douban.com/subject/30245565/"
+    author="大冰"
+    date="2025/11/21"
+  />
   <ImageCard
     image="https://upyun-oss.mu00.cn/2025/11/15/1763190124451.png"
     title="我不"
