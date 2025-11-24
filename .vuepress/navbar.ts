@@ -18,7 +18,7 @@ export default defineNavbarConfig([
         text: "核心基础",
         icon: "icon-xingqiu",
         activeMatch: "/core/",
-        link: "core/90j9jwqp/",
+        link: "core/overview/",
       },
       {
         text: "框架生态",
