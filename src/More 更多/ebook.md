@@ -5,21 +5,29 @@ permalink: /more/ebook/
 pageClass: page-ebook
 ---
 
-## ✨ 2025（7 本）
+## ✨ 2025（8 本）
 
 <CardGrid :cols="{ sm: 2, md: 3, lg: 4 }">
   <ImageCard
+    image="https://upyun-oss.mu00.cn/2025/12/07/1765116687255.png"
+    title="小孩"
+    description="到死之前我们都是需要发育的孩子，从未长大，也从未停止生长"
+    href="https://book.douban.com/subject/33447944/"
+    author="大冰"
+    date="2025/12/08"
+  />
+  <ImageCard
     image="https://upyun-oss.mu00.cn/2025/11/24/1763990620998.jpg"
     title="你坏"
-    description="如果你和众人不一样。那就不一样。如果你和世界不一样。那就不一样吧。"
+    description="娑婆境里，所以当下动人的故事，全都不是第一次发生"
     href="https://book.douban.com/subject/30245565/"
     author="大冰"
     date="2025/11/21"
   />
   <ImageCard
-    image="https://upyun-oss.mu00.cn/2025/11/15/1763190124451.png"
+    image="https://upyun-oss.mu00.cn/2025/12/07/1765117362182.png"
     title="我不"
-    description="善意能消戾，善意能得缘，善意能带业往生，善意能回头是岸。善意能够帮人捕捉并建立起独特的幸福感。“我不”是一种善意坦然，也是一种善意的随缘，更是一句善意的自省。"
+    description="人世即俗人，但总有一些俗人，俗得和你我不太一样"
     href="https://book.douban.com/subject/27115882/"
     author="大冰"
     date="2025/11/07"
