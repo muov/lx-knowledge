@@ -73,6 +73,11 @@ export default defineNavbarConfig([
         icon: "icon-xiangfa",
         link: "https://www.doubao.com/share/code/e79514bd8a53eb18",
       },
+      {
+        text: "若志 • 随笔",
+        icon: "https://q1.qlogo.cn/g?b=qq&nk=80360650&s=100",
+        link: "https://rz.sb/",
+      },
     ],
   },
 ]);
