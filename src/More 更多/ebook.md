@@ -5,6 +5,17 @@ permalink: /more/ebook/
 pageClass: page-ebook
 ---
 
+## ✨ 2026  (๑•̀ㅂ•́)و✧
+
+<BookCard
+  image="https://upyun-oss.mu00.cn/2026/01/11/1768143885503.jpg"
+  title="蛤蟆先生去看心理医生"
+  description="借由蛤蟆和心理咨询师苍鹭的互动，探索了蛤蟆自卑、软弱、爱炫耀的个性与抑郁的情绪究竟来源于何处，让读者看到童年经历对人格的深刻影响，以及如何才能在心理上真正长大成人，独立、自信、充满希望地生活"
+  href="https://book.douban.com/subject/35143790/"
+  author="罗伯特·戴博德"
+  date="2026/01/12"
+/>
+
 ## ✨ 2025（8 本）
 
 <BookCard
