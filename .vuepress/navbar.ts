@@ -64,7 +64,7 @@ export default defineNavbarConfig([
         link: "/more/interview/",
       },
       {
-        text: "我的书籍 ",
+        text: "书香雅苑 ",
         icon: "icon-shuji",
         link: "/more/ebook/",
       },
