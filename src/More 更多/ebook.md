@@ -5,7 +5,16 @@ permalink: /more/ebook/
 pageClass: page-ebook
 ---
 
-## ✨ 2026  (๑•̀ㅂ•́)و✧
+## ✨ 2026 (๑•̀ㅂ•́)و✧
+
+<BookCard
+  image="https://upyun-oss.mu00.cn/2026/01/21/1768996168208.png"
+  title="好吗好的"
+  description="请相信，这个世界上真的有人在过着你想要的生活"
+  href="https://book.douban.com/subject/26844348/"
+  author="大冰"
+  date="2026/01/19"
+/>
 
 <BookCard
   image="https://upyun-oss.mu00.cn/2026/01/11/1768143885503.jpg"
