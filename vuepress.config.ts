@@ -28,6 +28,10 @@ export default defineUserConfig({
     "@theme/Nav/VPNavBarTitle.vue": resolve(
       "./.vuepress/theme/components/VPNavBarTitle.vue"
     ),
+    "@theme/global/VPLinkCard.vue": resolve(
+      "./.vuepress/theme/components/LinkCard.vue"
+    ),
+
   },
 
   bundler: viteBundler(),
