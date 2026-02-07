@@ -56,7 +56,7 @@ export default defineNavbarConfig([
       {
         text: "书签导航",
         icon: "icon-shuqian-",
-        link: "https://github.com/sunnyboy-mu/i-nav/",
+        link: "/nav/",
       },
       {
         text: "前端面试 ",

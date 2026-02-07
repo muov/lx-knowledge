@@ -1,27 +1,41 @@
 <script setup lang="ts">
-import VPIcon from '@theme/VPIcon.vue'
-import VPLink from '@theme/VPLink.vue'
-import { computed } from 'vue';
+import VPIcon from "@theme/VPIcon.vue";
+import VPLink from "@theme/VPLink.vue";
+import { computed } from "vue";
 
-const { href, title, icon, description, target, rel,tag } = defineProps<{
-  href: string
-  title?: string
-  icon?: string | { svg: string }
-  description?: string
-  target?: string
-  rel?: string,
-  tag?: string
-}>()
+const { href, title, icon, description, target, rel, tag } = defineProps<{
+  href: string;
+  title?: string;
+  icon?: string | { svg: string };
+  description?: string;
+  target?: string;
+  rel?: string;
+  tag?: string;
+}>();
 
-const tags = computed(()=> tag?.split(',') ?? [])
+const tags = computed(() => tag?.split(",") ?? []);
+
+const faviconIcon = computed(() => {
+  if (icon) return icon;
+  if (href) {
+    const domain = href.replace(/^(https?:\/\/)/, "").split("/")[0];
+    return `https://www.faviconextractor.com/favicon/${domain}`;
+  }
+  return undefined;
+});
 </script>
 
 <template>
   <div class="vp-link-card">
     <span class="body">
-      <VPLink :href="href" no-icon class="link no-icon" v-bind="{ target, rel }">
+      <VPLink
+        :href="href"
+        no-icon
+        class="link no-icon"
+        v-bind="{ target, rel }"
+      >
         <slot name="title">
-          <VPIcon v-if="icon" :name="icon" />
+          <VPIcon v-if="faviconIcon" :name="faviconIcon" />
           <span v-if="title" class="text" v-html="title" />
         </slot>
       </VPLink>
@@ -48,7 +62,10 @@ const tags = computed(()=> tag?.split(',') ?? [])
   border: solid 1px var(--vp-c-divider);
   border-radius: 8px;
   box-shadow: var(--vp-shadow-1);
-  transition: border-color var(--vp-t-color), box-shadow var(--vp-t-color), background-color var(--vp-t-color);
+  transition:
+    border-color var(--vp-t-color),
+    box-shadow var(--vp-t-color),
+    background-color var(--vp-t-color);
 }
 
 .vp-link-card:hover {
@@ -106,7 +123,7 @@ const tags = computed(()=> tag?.split(',') ?? [])
   overflow-wrap: break-word;
 }
 
-.vp-link-card .tags{
+.vp-link-card .tags {
   position: absolute;
   right: 0.2rem;
   top: 0.2rem;
@@ -114,12 +131,12 @@ const tags = computed(()=> tag?.split(',') ?? [])
   gap: 0.2rem;
 }
 
-.vp-link-card .tags .tag{
+.vp-link-card .tags .tag {
   font-size: 0.8rem;
   background-color: var(--vp-c-gray-2);
   border-radius: 0.5rem;
   line-height: 1.2rem;
   padding: 0 0.3rem;
 }
-
 </style>
+

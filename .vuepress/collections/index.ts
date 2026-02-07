@@ -4,10 +4,11 @@
 
 import { defineCollections } from "vuepress-theme-plume";
 import web from "./web";
+import nav from "./nav";
 
 /**
  * 导出所有的 collections
  * (blog 为博客示例，如果不需要博客功能，请删除)
  * (demoDoc 为参考示例，如果不需要它，请删除)
  */
-export default defineCollections([...web]);
+export default defineCollections([...web, nav]);
