@@ -55,6 +55,7 @@ defineProps<{
   }
   .book-info {
     flex: 1;
+    min-width: 0;
   }
 
   .book-title {
