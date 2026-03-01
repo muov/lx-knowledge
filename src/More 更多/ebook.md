@@ -6,7 +6,15 @@ pageClass: page-ebook
 ---
 
 ## ✨ 2026 (๑•̀ㅂ•́)و✧
-<CardGrid :cols="{ sm: 1, md: 2, lg: 3 }">
+<CardGrid :cols="{ sm: 2, md: 3, lg: 4 }">
+  <ImageCard
+    image="https://upyun-oss.mu00.cn/2026/03/01/1772365736769.png"
+    title="啊2.0"
+    description="缘深缘浅，缘聚缘散，惜缘随缘莫攀缘"
+    href="https://book.douban.com/subject/35169165/"
+    author="大冰"
+    date="2026/03/02"
+  />
   <ImageCard
     image="https://upyun-oss.mu00.cn/2026/01/21/1768996168208.png"
     title="好吗好的"
@@ -26,7 +34,7 @@ pageClass: page-ebook
 </CardGrid>
 
 ## ✨ 2025（8 本）
-<CardGrid :cols="{ sm: 1, md: 2, lg: 3 }">
+<CardGrid :cols="{ sm: 2, md: 3, lg: 4 }">
   <ImageCard
     image="https://upyun-oss.mu00.cn/2025/12/07/1765116687255.png"
     title="小孩"
@@ -94,7 +102,7 @@ pageClass: page-ebook
 </CardGrid>
 
 ## ✨ 2024（9 本）
-<CardGrid :cols="{ sm: 1, md: 2, lg: 3 }">
+<CardGrid :cols="{ sm: 2, md: 3, lg: 4 }">
   <ImageCard
       image="https://upyun-oss.mu00.cn/202406291653868.png"
       title="做自己的心理医生"
