@@ -8,6 +8,13 @@ pageClass: page-ebook
 ## ✨ 2026 (๑•̀ㅂ•́)و✧
 <CardGrid :cols="{ sm: 2, md: 3, lg: 4 }">
   <ImageCard
+    image="https://upyun-oss.mu00.cn/2026/04/06/1775463107922.png"
+    title="爱你老己"
+    description="我和我自己才是真正的同甘共苦、同舟共济的人；爱你老己，明天见，天天见"
+    author="孔德男"
+    date="2026/03/30"
+    />
+  <ImageCard
     image="https://upyun-oss.mu00.cn/2026/03/01/1772365736769.png"
     title="啊2.0"
     description="缘深缘浅，缘聚缘散，惜缘随缘莫攀缘"
